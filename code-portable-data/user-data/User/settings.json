@@ -2,24 +2,24 @@
   "security.workspace.trust.enabled": false,
 
   // Vim extension settings
-  "vim.enableNeovim": true,
-  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-  "vim.smartRelativeLine": true,
-  "vim.vimrc.enable": true,
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.vimrc.path": "~/vscode_portable/vim_config/vscode.vimrc",
-  "vim.neovimPath": "/Users/windperson/vscode_portable/cli-tools/nvim-macos-arm64/bin/nvim", // needs to be absolute path
-  "vim.handleKeys": {
-    "<C-d>": true,
-    "<C-k>": false,
-    "<C-p>": false,
-    "<C-r>": true,
-    "<C-s>": false,
-    "<C-w>": false,
-    "<C-z>": false
-  },
+  // "vim.enableNeovim": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  // "vim.smartRelativeLine": true,
+  // "vim.vimrc.enable": true,
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.vimrc.path": "~/vscode_portable/vim_config/vscode.vimrc",
+  // "vim.neovimPath": "/Users/windperson/vscode_portable/cli-tools/nvim-macos-arm64/bin/nvim", // needs to be absolute path
+  // "vim.handleKeys": {
+  //   "<C-d>": true,
+  //   "<C-k>": false,
+  //   "<C-p>": false,
+  //   "<C-r>": true,
+  //   "<C-s>": false,
+  //   "<C-w>": false,
+  //   "<C-z>": false
+  // },
 
   // Integrated terminal settings
   "terminal.integrated.hideOnStartup": "whenEmpty",
@@ -52,12 +52,14 @@
   "terminal.integrated.defaultProfile.osx": "pwsh",
 
   // PowerShell extension settings
+  "powershell.powerShellAdditionalExePaths": {
+    "homebrew": "/opt/homebrew/bin/pwsh"
+  },
   "powershell.promptToUpdatePowerShell": false,
   "powershell.debugging.createTemporaryIntegratedConsole": true,
   "powershell.enableProfileLoading": true,
   "powershell.enableReferencesCodeLens": true,
-  "powershell.pester.useLegacyCodeLens": false,
-  "powershell.powerShellDefaultVersion": "pwsh",
+  "powershell.powerShellDefaultVersion": "homebrew",
   "powershell.integratedConsole.showOnStartup": false,
   "powershell.scriptAnalysis.enable": true,
   "powershell.scriptAnalysis.settingsPath": "~/vscode_portable/pwsh-scripts/PSScriptAnalyzerSettings.psd1",
@@ -72,7 +74,7 @@
   },
 
   // C# extension settings
-  //"dotnet.dotnetPath": "/Users/windperson/vscode_portable/cli-tools/dotnet/sdks/8.0", // needs to be absolute path
+  "dotnet.dotnetPath": "/Users/myMacUserName/vscode_portable/cli-tools/dotnet/sdks/8.0", // needs to be absolute path
   "dotnetAcquisitionExtension.sharedExistingDotnetPath": "~/vscode_portable/cli-tools/dotnet/sdks/8.0/dotnet",
   "dotnetAcquisitionExtension.enableTelemetry": false,
   "dotnetAcquisitionExtension.existingDotnetPath": [
@@ -86,5 +88,5 @@
   "omnisharp.sdkVersion": "8.0.404",
 
   // Don't mess our dev environment with nagging VSCode extension recommendations
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
 }

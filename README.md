@@ -10,7 +10,7 @@ The benefit to use this portable development environment is providing a cleaner 
 - Download the portable (*.tar.gz) distribution from the release page:
   - [VSCode portable](https://code.visualstudio.com/Download)
   - [Install PowerShell v7.4.x via Homebrew or Direct Download](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.4#install-the-latest-stable-release-of-powershell)  
-    (Since the binary distribution of PowerShell has problem to be set as default shell in VSCode)
+    (Since the binary distribution of PowerShell has problem to be set as the [default Shell in VSCode Integrated Terminal](https://code.visualstudio.com/docs/terminal/shell-integration))
   - [.NET v8.x SDK x64 zip](https://dotnet.microsoft.com/download/dotnet/8.0)
   - (Optional) [NeoVim macOS .tar.gz](https://github.com/neovim/neovim/releases/tag/v0.10.2), If you want to use Vim extension in VSCode.
 - Extract or copy the binary distribution file to the desired location:
@@ -32,7 +32,7 @@ If you want to use Vim extension, be sure to un-comment and update the related s
 
 ## Start VSCode
 
-Run the `run.sh` to start the portable VSCode application instance (You will notice two seperate VSCode app icon on [the Dock](https://support.apple.com/guide/mac-help/open-apps-from-the-dock-mh35859/mac) ), and install the *PowerShell*, *.NET Install Tool*, *C# for Visual Studio Code*, and (Optional) *Vim* extensions from the ***.vsix*** files that download before.  
+Run the `run.sh` in root directory (be sure to make it execuable via `chmod +x` command) to start the portable VSCode application instance (You will notice two seperate VSCode app icon on [the Dock](https://support.apple.com/guide/mac-help/open-apps-from-the-dock-mh35859/mac) ), and install the *PowerShell*, *.NET Install Tool*, *C# for Visual Studio Code*, and (Optional) *Vim* extensions from the ***.vsix*** files that download before.  
 ([how to install VSCode extension from ***.vsix*** file](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).)
 
 ## How to install PowerShell modules
