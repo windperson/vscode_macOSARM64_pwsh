@@ -1,0 +1,90 @@
+{
+  "security.workspace.trust.enabled": false,
+
+  // Vim extension settings
+  "vim.enableNeovim": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.smartRelativeLine": true,
+  "vim.vimrc.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.vimrc.path": "~/vscode_portable/vim_config/vscode.vimrc",
+  "vim.neovimPath": "/Users/windperson/vscode_portable/cli-tools/nvim-macos-arm64/bin/nvim", // needs to be absolute path
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-k>": false,
+    "<C-p>": false,
+    "<C-r>": true,
+    "<C-s>": false,
+    "<C-w>": false,
+    "<C-z>": false
+  },
+
+  // Integrated terminal settings
+  "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.env.osx": {
+    "POWERSHELL_TELEMETRY_OPTOUT": "true",
+    "POWERSHELL_UPDATECHECK": "Off",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "true",
+    "DOTNET_ROOT": "~/vscode_portable/cli-tools/dotnet/sdks/8.0/",
+    "PATH": "~/vscode_portable/Visual Studio Code.app/Contents/Resources/app/bin:~/vscode_portable/cli-tools/dotnet/sdks/8.0:${env:PATH}",
+    "PSModulePath": "~/vscode_portable/pwsh_modules"
+  },
+  "terminal.integrated.profiles.osx": {
+    "bash": null,
+    "zsh": null,
+    "pwsh": {
+      "path": "pwsh",
+      "args": [
+        "-nol",
+        "-nop",
+        "-noe",
+        "-ex",
+        "RemoteSigned",
+        "-Command",
+        "Invoke-expression \". ~/vscode_portable/pwsh-scripts/Set-PwshTools.ps1\""
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "pwsh",
+
+  // PowerShell extension settings
+  "powershell.promptToUpdatePowerShell": false,
+  "powershell.debugging.createTemporaryIntegratedConsole": true,
+  "powershell.enableProfileLoading": true,
+  "powershell.enableReferencesCodeLens": true,
+  "powershell.pester.useLegacyCodeLens": false,
+  "powershell.powerShellDefaultVersion": "pwsh",
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.scriptAnalysis.settingsPath": "~/vscode_portable/pwsh-scripts/PSScriptAnalyzerSettings.psd1",
+  
+  // Recommended settings for PowerShell
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "[powershell]": {
+    "files.trimTrailingWhitespace": true,
+    "files.encoding": "utf8bom",
+    "files.autoGuessEncoding": true,
+  },
+
+  // C# extension settings
+  //"dotnet.dotnetPath": "/Users/windperson/vscode_portable/cli-tools/dotnet/sdks/8.0", // needs to be absolute path
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "~/vscode_portable/cli-tools/dotnet/sdks/8.0/dotnet",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "dotnetAcquisitionExtension.existingDotnetPath": [
+    {
+      "extensionId": "ms-dotnettools.csharp",
+      "path": "~/vscode_portable/cli-tools/dotnet/sdks/8.0/dotnet"
+    }
+  ],
+  "omnisharp.useModernNet": true,
+  "omnisharp.sdkPath": "~/vscode_portable/cli-tools/dotnet/sdks/8.0",
+  "omnisharp.sdkVersion": "8.0.404",
+
+  // Don't mess our dev environment with nagging VSCode extension recommendations
+  "extensions.ignoreRecommendations": true
+}

@@ -1,0 +1,27 @@
+cli-tools/*
+!cli-tools/Readme.md
+
+!cli-tools/dotnet/
+cli-tools/dotnet/*
+!cli-tools/dotnet/sdks
+cli-tools/dotnet/sdks/*
+!cli-tools/dotnet/sdks/8.0/
+cli-tools/dotnet/sdks/8.0/*
+!cli-tools/dotnet/sdks/8.0/Readme.md
+
+!cli-tools/nvim-macos-arm64
+cli-tools/nvim-macos-arm64/**/*
+!cli-tools/nvim-macos-arm64/Readme.md
+
+pwsh_modules/**/*
+!pwsh_modules/Readme.md
+
+code-portable-data/*
+!code-portable-data/Readme.md
+!code-portable-data/user-data/
+code-portable-data/user-data/*
+!code-portable-data/user-data/User/
+code-portable-data/user-data/User/*
+!code-portable-data/user-data/User/settings.json
+
+Visual\ Studio\ Code.app/*
