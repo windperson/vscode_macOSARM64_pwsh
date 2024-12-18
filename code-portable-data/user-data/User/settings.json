@@ -63,6 +63,7 @@
   "powershell.integratedConsole.showOnStartup": false,
   "powershell.scriptAnalysis.enable": true,
   "powershell.scriptAnalysis.settingsPath": "~/vscode_portable/pwsh-scripts/PSScriptAnalyzerSettings.psd1",
+  "powershell.pester.useLegacyCodeLens": false,
   
   // Recommended settings for PowerShell
   "editor.renderWhitespace": "all",
