@@ -1,4 +1,5 @@
 {
+  "telemetry.telemetryLevel": "off",
   "security.workspace.trust.enabled": false,
 
   // Vim extension settings
